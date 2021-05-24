@@ -50,7 +50,7 @@ var RPT = new web3.eth.Contract(RPTABI, chain.RPToken);
 
 
 app.get('/', (req, res) => {
-    res.send('Royale : Welcome to the Royale Kingdom ;)')
+    res.send('Arkius Home : Welcome to Arkius ;)')
 })
 
 app.get('/getAll', (req, res) => {
