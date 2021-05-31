@@ -2003,4 +2003,4 @@ const RPTABI = [
     }
 ]
 
-module.exports = {RoyaNFTABI, RoyaleLPABI, RPTABI}
+module.exports = {RPTABI, RoyaNFTABI, RoyaleLPABI}
