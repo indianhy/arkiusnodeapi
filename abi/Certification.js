@@ -15,11 +15,6 @@ const CertificationABI = [
 				"internalType": "contract IArkiusAttentionSeekerToken",
 				"name": "attentionSeekerContract",
 				"type": "address"
-			},
-			{
-				"internalType": "contract EntityContract",
-				"name": "entityContract",
-				"type": "address"
 			}
 		],
 		"stateMutability": "nonpayable",

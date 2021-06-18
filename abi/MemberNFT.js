@@ -101,29 +101,6 @@ const MembershipABI = [
 	{
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "id",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "supply",
-				"type": "uint256"
-			},
-			{
-				"internalType": "string",
-				"name": "uri",
-				"type": "string"
-			}
-		],
-		"name": "mint",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
 				"internalType": "string",
 				"name": "uri",
 				"type": "string"
@@ -550,4 +527,5 @@ const MembershipABI = [
 		"type": "function"
 	}
 ]
+
 module.exports = {MembershipABI}
