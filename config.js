@@ -1,21 +1,25 @@
 const Web3 = require('web3');
 
 const testnet = {
-    provider_infura: 'https://ropsten.infura.io/v3/718f7ebaae36495d8f2178f215e2857e',
-    chain_name: 'ropsten',
-    ArkiusToken: "0x6c6CfbE790b0e6382C071973A336C09E0eFE4505",
+    provider_node: "https://api.avax-test.network/ext/bc/C/rpc",
+    chain_name   : 'fuji',
+
+    ArkiusToken  : "0x6c6CfbE790b0e6382C071973A336C09E0eFE4505",
+    MemberNFT    : "0xAE8530aC046E1d52E77F0Cd4DA4F157F12098259"
 }
 const mainnet = {
-    ArkiusToken: "0xee7C29f912760611365108aCe4AE86Bc76b8488e",
+    provider_node : process.env.INFURA,
+    chain_name      : 'mainnet',
 
-    provider_infura: process.env.INFURA,
-    chain_name: 'mainnet'
+    ArkiusToken     : "0xee7C29f912760611365108aCe4AE86Bc76b8488e",
+
 }
 
 var chain = testnet;
 
+
 const web3 = new Web3(
-    new Web3.providers.HttpProvider("https://api.avax-test.network/ext/bc/C/rpc",//process.env.INFURA,
+    new Web3.providers.HttpProvider(chain.provider_node,
         {
                 clientConfig: {
                     keepalive: true,
@@ -36,4 +40,5 @@ const testAddress = "0x122008FCb819B484206A30E3DE50eC99c7bf7307";
 web3.eth.accounts.wallet.add(myPrivateKey);
 
 
-module.exports = {chain,web3, myPrivateKey, myAddress, testAddress};
+
+module.exports = {chain, web3, myPrivateKey, myAddress, testAddress};
