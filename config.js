@@ -4,8 +4,9 @@ const testnet = {
     provider_node: "https://api.avax-test.network/ext/bc/C/rpc",
     chain_name   : 'fuji',
 
-    ArkiusToken  : "0x6c6CfbE790b0e6382C071973A336C09E0eFE4505",
-    MemberNFT    : "0xAE8530aC046E1d52E77F0Cd4DA4F157F12098259"
+    ArkiusToken   : "0xa3d0d2489BEd6A551ca84f296dcb2D8fc6dd3eF3",
+    MemberNFT     : "0x4f5A9c586621d47bAAbc3a0EfD519027d173Ce45",
+    Certifiaction : "0x162e4b45c1D266185dbA855Ea5fB0Ae172F1c739"
 }
 const mainnet = {
     provider_node : process.env.INFURA,

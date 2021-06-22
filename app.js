@@ -1,11 +1,11 @@
 require('dotenv').config()
 const express           = require('express');
 var bodyParser          = require('body-parser')
-const Web3              = require('web3');
 const cors              = require('cors');
 const indexRouter       = require("./routes/index");
 const NFTRouter         = require("./routes/NFTs");
 const arkiusTokenRouter = require("./routes/arkiusToken");
+const certifications    = require("./routes/certifications")
 
 const app = express();
 //app.use(express.json());
@@ -16,6 +16,7 @@ app.use(cors());
 app.use("/", indexRouter);
 app.use("/token", arkiusTokenRouter);
 app.use("/NFT", NFTRouter);
+app.use("/certification", certifications);
 
 
 

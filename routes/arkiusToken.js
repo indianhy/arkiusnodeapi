@@ -1,10 +1,10 @@
-const Web3    = require('web3');
 const express = require("express");
 const router  = express.Router();
-const { ABI } = require('./../abi/ArkiusToken');
+
+const { TokenABI } = require('./../abi/ArkiusToken');
 const { chain, web3 } = require('./../config');
 
-var ArkiusToken = new web3.eth.Contract(ABI, chain.ArkiusToken);
+var ArkiusToken = new web3.eth.Contract(TokenABI, chain.ArkiusToken);
 
 router.get('/', (req, res) => {
     res.send('Arkius Token : Welcome to Arkius ;)')

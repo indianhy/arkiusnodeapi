@@ -1,4 +1,4 @@
-const MembershipABI = [
+const MemberABI = [
 	{
 		"inputs": [
 			{
@@ -528,4 +528,4 @@ const MembershipABI = [
 	}
 ]
 
-module.exports = {MembershipABI}
+module.exports = {MemberABI}
