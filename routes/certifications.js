@@ -20,7 +20,7 @@ router.get('/allCertifications', async(req, res) => {
     res.send(response);
 });
 
-router.get('/dynamicCertificaion/:id', async(req, res) => {
+router.get('/dynamicCertification/:id', async(req, res) => {
     var response = await certification.methods.getDynamicCertification(req.params.id).call();
     res.send(response);
 });
@@ -30,5 +30,19 @@ router.get('/subscriptions/:address', async(req, res) => {
     res.send(response);
 });
 
+router.get('/certificationScore/:certificationId/:entityId', async(req, res) => {
+    var response = await certification.methods.getStaticCertificate(req.params.certificationId, req.params.entityId).call();
+    res.send(response);
+});
+
+router.get('/staticCertification/:id', async(req, res) => {
+    var response = await certification.methods.getStaticCertification(req.params.id).call();
+    res.send(response);
+});
+
+router.get('/subscribers/:certificationId', async(req, res) => {
+    var response = await certification.methods.getSubscribers(req.params.certificationId).call();
+    res.send(response);
+});
 
 module.exports = router;
