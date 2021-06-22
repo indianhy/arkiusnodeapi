@@ -1,46 +1,15 @@
 const express = require("express");
 const router  = express.Router();
 
-const { TokenABI } = require('./../abi/ArkiusToken');
-const { chain, web3 } = require('./../config');
+const controller = require('../controller/arkiusToken.js');
 
-var ArkiusToken = new web3.eth.Contract(TokenABI, chain.ArkiusToken);
-
-router.get('/', (req, res) => {
-    res.send('Arkius Token : Welcome to Arkius ;)')
-});
-
-router.get('/name', async (req, res) => {
-        var response = await ArkiusToken.methods.name().call();
-        res.send(response);
-});
-
-router.get('/symbol', async (req, res) => {
-        var response = await ArkiusToken.methods.symbol().call();
-        res.send(response);
-});
-
-router.get('/decimals', async (req, res) => {
-        var response = await ArkiusToken.methods.decimals().call();
-        res.send(response);
-});
-
-router.get('/totalSupply', async (req, res) => {
-        var response = await ArkiusToken.methods.totalSupply().call();
-        res.send(response);
-});
-
-router.get('/balanceOf/:address', async (req, res) => {
-        //Add checks
-        var balance = await ArkiusToken.methods.balanceOf(req.params.address).call();
-        res.send(balance);
-});
-
-router.get('/allowanceOf/:owner/:spender', async (req, res) => {
-        //Add checks
-        var allowance = await ArkiusToken.methods.allowance(req.params.owner, req.params.sender).call();
-        res.send(allowance);
-});
+router.get('/', controller.index);
+router.get('/name',controller.name);
+router.get('/symbol',controller.symbol);
+router.get('/decimals',controller.decimals);
+router.get('/totalSupply',controller.totalSupply);
+router.get('/balanceOf/:address',controller.balanceOf);
+router.get('/allowanceOf/:owner/:spender',controller.allowanceOf);
 
 /*async function avaxtest(){
         const receipt = await RPT.methods
