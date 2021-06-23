@@ -15,6 +15,6 @@ router.get('/owner', controller.owner)
 
 router.get('/is-owner', controller.isOwner)
 
-router.get('marketplace-address', controller.marketPlace)
+router.get('/marketplace-address', controller.marketPlace)
 
 module.exports = router;

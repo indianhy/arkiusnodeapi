@@ -7,7 +7,8 @@ const testnet = {
     ArkiusToken   : "0xa3d0d2489BEd6A551ca84f296dcb2D8fc6dd3eF3",
     MemberNFT     : "0x4f5A9c586621d47bAAbc3a0EfD519027d173Ce45",
     Certifiaction : "0x162e4b45c1D266185dbA855Ea5fB0Ae172F1c739",
-    Campaign      : "0x8DC0fAF4778076A8a6700078A500C59960880F0F"
+    Campaign      : "0x8DC0fAF4778076A8a6700078A500C59960880F0F",
+    Entity        : "0xc4e1dEc4CAC6082Bc426A9AF3AD0c23b4031c29C"
 }
 const mainnet = {
     provider_node : process.env.INFURA,
