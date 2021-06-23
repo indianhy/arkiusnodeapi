@@ -1,6 +1,6 @@
 
-const { TokenABI } = require('../abi/ArkiusToken');
-const { chain, web3 } = require('../config');
+const { TokenABI } = require('../services/abi/ArkiusToken');
+const { chain, web3 } = require('../../config');
 
 var ArkiusToken = new web3.eth.Contract(TokenABI, chain.ArkiusToken);
 

@@ -6,7 +6,8 @@ const testnet = {
 
     ArkiusToken   : "0xa3d0d2489BEd6A551ca84f296dcb2D8fc6dd3eF3",
     MemberNFT     : "0x4f5A9c586621d47bAAbc3a0EfD519027d173Ce45",
-    Certifiaction : "0x162e4b45c1D266185dbA855Ea5fB0Ae172F1c739"
+    Certifiaction : "0x162e4b45c1D266185dbA855Ea5fB0Ae172F1c739",
+    Campaign      : "0x8DC0fAF4778076A8a6700078A500C59960880F0F"
 }
 const mainnet = {
     provider_node : process.env.INFURA,
@@ -35,11 +36,11 @@ const web3 = new Web3(
        })
 );
 
-const myPrivateKey = "0xf394fb63726c2f8ac52928a7e4524adea2084ecbe87a5d87f63c2ec54e66fa1e"
-const myAddress = "0x287A135702555F69BA6eE961f69ee60Fbb87A0e8";
-const testAddress = "0x122008FCb819B484206A30E3DE50eC99c7bf7307";
-web3.eth.accounts.wallet.add(myPrivateKey);
+// const myPrivateKey = "0xf394fb63726c2f8ac52928a7e4524adea2084ecbe87a5d87f63c2ec54e66fa1e"
+// const myAddress = "0x287A135702555F69BA6eE961f69ee60Fbb87A0e8";
+// const testAddress = "0x122008FCb819B484206A30E3DE50eC99c7bf7307";
+// web3.eth.accounts.wallet.add(myPrivateKey);
 
 
 
-module.exports = {chain, web3, myPrivateKey, myAddress, testAddress};
+module.exports = {chain, web3};

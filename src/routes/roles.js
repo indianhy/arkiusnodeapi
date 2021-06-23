@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const controller = require('../controller/NFTs.js');
+const controller = require('../controller/roles.js');
 router.get('/'                       ,  controller.index);
 router.get('/memberIdOf/:address'    ,  controller.memberIdOf);
 router.get('/addressOfMember/:id'    ,  controller.addressOfMember);

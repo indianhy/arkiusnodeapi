@@ -1,6 +1,6 @@
 
-const { CertificationABI } = require('./../abi/Certification');
-const { chain, web3 } = require('./../config');
+const { CertificationABI } = require('./../services/abi/Certification');
+const { chain, web3 } = require('./../../config');
 
 var certification = new web3.eth.Contract(CertificationABI, chain.Certifiaction);
 
