@@ -11,7 +11,7 @@ router.get('/all-campaign/:address', controller.allCampaigns)
 
 router.get('/get-campaign/:id', controller.getCampaign)
 
-
+router.get('/owner', controller.owner)
 
 router.get('/is-owner', controller.isOwner)
 

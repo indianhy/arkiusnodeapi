@@ -17,7 +17,10 @@ const allCampaigns = async(req, res) => {
     res.send(response)
 }
 
-
+const getCampaign = async(req, res) => {
+    var response = await Campaign.methods.getCampaign(req.params.id).call();
+    res.send(response);
+}
 
 const owner = async (req, res) => {
     var response = await Campaign.methods.owner().call();
