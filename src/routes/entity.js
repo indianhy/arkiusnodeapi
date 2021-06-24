@@ -7,12 +7,12 @@ router.get('/', controller.index)
 
 router.get('/owner', controller.owner);
 
-router.get('/all-entities', controller.allEntities);
+router.get('/all/entities', controller.allEntities);
 
-router.get('/seeker-all-entities/:address', controller.seekerEntities);
+router.get('/seeker/all/entities/:address', controller.seekerEntities);
 
-router.get('/campaign-contract-address', controller.campaignContractAddress);
+router.get('/campaign/contract', controller.campaignContractAddress);
 
-router.get('/get-entity/:id', controller.getEntity);
+router.get('/get/:id', controller.getEntity);
 
 module.exports = router

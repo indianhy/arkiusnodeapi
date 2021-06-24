@@ -19,6 +19,7 @@ const allEntities = async(req, res) => {
 
 const campaignContractAddress = async(req, res) => {
     var response = await Entity.methods.m_campaignContractAddress().call();
+    console.log(response)
     res.send(response);
 }
 

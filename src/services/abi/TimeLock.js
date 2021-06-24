@@ -1,4 +1,4 @@
-const TimeLockABI = [
+const TimelockABI = [
 	{
 		"inputs": [
 			{
@@ -192,7 +192,13 @@ const TimeLockABI = [
 		"type": "function"
 	},
 	{
-		"inputs": [],
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "add",
+				"type": "address"
+			}
+		],
 		"name": "lockerDetail",
 		"outputs": [
 			{
@@ -236,4 +242,4 @@ const TimeLockABI = [
 	}
 ]
 
-module.exports = {TimeLockABI}
+module.exports = {TimelockABI}

@@ -5,17 +5,17 @@ const controller = require('../controller/certifications.js');
 
 router.get('/', controller.index);
 
-router.get('/isValidCertification/:id', controller.isValidCertification);
+router.get('/is/valid/certification/:id', controller.isValidCertification);
 
-router.get('/allCertifications', controller.allCertifications);
+router.get('/all/certifications', controller.allCertifications);
 
-router.get('/dynamicCertification/:id', controller.dynamicCertification);
+router.get('/dynamic/certification/:id', controller.dynamicCertification);
 
 router.get('/subscriptions/:address', controller.subscriptions);
 
-router.get('/certificationScore/:certificationId/:entityId', controller.certificationScore);
+router.get('/certification/score/:certificationId/:entityId', controller.certificationScore);
 
-router.get('/staticCertification/:id', controller.staticCertification);
+router.get('/static/certification/:id', controller.staticCertification);
 
 router.get('/subscribers/:certificationId', controller.subscribers);
 
