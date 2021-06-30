@@ -1,10 +1,12 @@
 const Web3 = require('web3');
 
 const testnet = {
-    provider_node: "https://api.avax-test.network/ext/bc/C/rpc",
+    provider_node: "https://api.avax-test.network/ext/bc/C/rpc",//"http://54.204.178.159:9650/ext/bc/2q9e4r6Mu3U68nU1fYjgbR6JvwrRx36CohpAX5UQxse55x1Q5/rpc",
     chain_name   : 'fuji',
 
-    ArkiusToken   : "0xa3d0d2489BEd6A551ca84f296dcb2D8fc6dd3eF3",
+    ArkiusToken   : "0x2f54BEa4A9d1442a686B8edc4aDBa680f290B8bb",
+
+    
     MemberNFT     : "0x4f5A9c586621d47bAAbc3a0EfD519027d173Ce45",
     SeekerNFT     : "0x60465133DD3f8518bFa61FeA4C2D412DBd7E17df",
     CertifierNFT  : "0x6ea16312A9656CFA49DE58CB5E606eD99f2D0200",
