@@ -12,6 +12,11 @@ const CampaignABI = [
 				"type": "address"
 			},
 			{
+				"internalType": "contract IEscrowContract",
+				"name": "escrowContract",
+				"type": "address"
+			},
+			{
 				"internalType": "contract IERC20",
 				"name": "token",
 				"type": "address"
@@ -58,12 +63,6 @@ const CampaignABI = [
 				"indexed": false,
 				"internalType": "uint256",
 				"name": "amountPerAd",
-				"type": "uint256"
-			},
-			{
-				"indexed": false,
-				"internalType": "uint256",
-				"name": "totalFunding",
 				"type": "uint256"
 			}
 		],
@@ -148,6 +147,12 @@ const CampaignABI = [
 				"type": "uint256[]"
 			},
 			{
+				"indexed": true,
+				"internalType": "uint256[]",
+				"name": "campaignFunded",
+				"type": "uint256[]"
+			},
+			{
 				"indexed": false,
 				"internalType": "uint256[]",
 				"name": "replenish",
@@ -193,7 +198,7 @@ const CampaignABI = [
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "id",
+				"name": "timestamp",
 				"type": "uint256"
 			},
 			{
@@ -229,11 +234,6 @@ const CampaignABI = [
 			{
 				"internalType": "uint96",
 				"name": "amountPerAd",
-				"type": "uint96"
-			},
-			{
-				"internalType": "uint96",
-				"name": "totalFunding",
 				"type": "uint96"
 			}
 		],
@@ -448,87 +448,8 @@ const CampaignABI = [
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "m_campaigns",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "_id",
-				"type": "uint256"
-			},
-			{
-				"internalType": "address",
-				"name": "_campaignOwner",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_adServed",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_totalClick",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_amountPerAd",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_totalFunding",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_escrowBalance",
-				"type": "uint256"
-			},
-			{
-				"internalType": "string",
-				"name": "_title",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_content",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_imageUrl",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_destinationUrl",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_metadata",
-				"type": "string"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_target",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [],
-		"name": "m_marketplaceControllerContract",
+		"name": "marketPlaceContract",
 		"outputs": [
 			{
 				"internalType": "address",

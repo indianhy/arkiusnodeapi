@@ -4,16 +4,16 @@ const testnet = {
     provider_node: "https://api.avax-test.network/ext/bc/C/rpc",//"http://54.204.178.159:9650/ext/bc/2q9e4r6Mu3U68nU1fYjgbR6JvwrRx36CohpAX5UQxse55x1Q5/rpc",
     chain_name   : 'fuji',
 
-    ArkiusToken   : "0x2f54BEa4A9d1442a686B8edc4aDBa680f290B8bb",
+    ArkiusToken   : "0xF471fedC12b31387a73Fe1B88f2B09Bec7a46E58",
+    TokenManager  : "0x1fdc8abd8C03Ff10f7d7Cd443aEd6076927AE243",
 
-    
+
     MemberNFT     : "0x4f5A9c586621d47bAAbc3a0EfD519027d173Ce45",
     SeekerNFT     : "0x60465133DD3f8518bFa61FeA4C2D412DBd7E17df",
     CertifierNFT  : "0x6ea16312A9656CFA49DE58CB5E606eD99f2D0200",
     Certifiaction : "0x162e4b45c1D266185dbA855Ea5fB0Ae172F1c739",
     Campaign      : "0x8DC0fAF4778076A8a6700078A500C59960880F0F",
     Entity        : "0xc4e1dEc4CAC6082Bc426A9AF3AD0c23b4031c29C",
-    TokenManager  : "0xE5fD449E216B9E23a5D966345C0968BD72Ade07A",
     Timelock      : "0x6261b6B565978C5E1343Db9ECCe9d66c23c5E274",
     Multisig      : "0xa7eA3f78a6badb2E3D6Da7859f27b5dD61014F0f",
     Rewards       : "0x2676E21B741B131685D2775D53927daf0C73e56e"

@@ -3,7 +3,7 @@ const EntityABI = [
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "id",
+				"name": "timestamp",
 				"type": "uint256"
 			},
 			{
@@ -201,7 +201,7 @@ const EntityABI = [
 	},
 	{
 		"inputs": [],
-		"name": "c_owner",
+		"name": "campaignContract",
 		"outputs": [
 			{
 				"internalType": "address",
@@ -214,7 +214,7 @@ const EntityABI = [
 	},
 	{
 		"inputs": [],
-		"name": "getAllEntities",
+		"name": "getAllEntitities",
 		"outputs": [
 			{
 				"internalType": "uint256[]",
@@ -297,7 +297,7 @@ const EntityABI = [
 	},
 	{
 		"inputs": [],
-		"name": "m_campaignContractAddress",
+		"name": "owner",
 		"outputs": [
 			{
 				"internalType": "address",
